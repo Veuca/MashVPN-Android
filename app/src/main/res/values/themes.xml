@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.MashVPN" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/dark_base</item>
+        <item name="android:statusBarColor">@color/dark_base</item>
+        <item name="android:navigationBarColor">@color/dark_base</item>
+    </style>
+</resources>

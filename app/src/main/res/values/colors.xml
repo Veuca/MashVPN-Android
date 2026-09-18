@@ -1,0 +1,7 @@
+<resources>
+    <color name="dark_base">#080C16</color>
+    <color name="dark_card">#0F1626</color>
+    <color name="dark_border">#1E293B</color>
+    <color name="brand_indigo">#6366F1</color>
+    <color name="brand_emerald">#10B981</color>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">مش وی پی ان</string>
+    <string name="app_name_en">MashVPN</string>
+    <string name="vpn_channel_name">وضعیت اتصال وی پی ان</string>
+    <string name="vpn_channel_desc">نمایش زمان و وضعیت اتصال فعال مش وی پی ان</string>
+</resources>
