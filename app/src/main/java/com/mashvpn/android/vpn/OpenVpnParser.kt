@@ -19,7 +19,7 @@ object OpenVpnParser {
         for (line in lines) {
             val trimmed = line.trim()
             if (trimmed.startsWith("remote ", ignoreCase = true)) {
-                val parts = trimmed.split("\s+".toRegex())
+                val parts = trimmed.split("\\s+".toRegex())
                 if (parts.size >= 2 && parts[1].isNotBlank()) {
                     host = parts[1]
                 }

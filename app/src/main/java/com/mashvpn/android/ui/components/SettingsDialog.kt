@@ -114,7 +114,7 @@ fun SettingsDialog(viewModel: MainViewModel) {
                         context.startActivity(intent)
                     },
                     shape = RoundedCornerShape(12.dp),
-                    border = ButtonDefaults.outlinedButtonBorder.copy(brush = androidx.compose.ui.graphics.SolidColor(DarkBorderLight)),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, DarkBorderLight),
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Icon(Icons.Default.Send, contentDescription = null, tint = AccentCyan, modifier = Modifier.size(18.dp))
@@ -129,7 +129,7 @@ fun SettingsDialog(viewModel: MainViewModel) {
                         viewModel.logout()
                     },
                     colors = ButtonDefaults.outlinedButtonColors(contentColor = AccentRose),
-                    border = ButtonDefaults.outlinedButtonBorder.copy(brush = androidx.compose.ui.graphics.SolidColor(AccentRose.copy(alpha = 0.5f))),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, AccentRose.copy(alpha = 0.5f)),
                     shape = RoundedCornerShape(12.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {

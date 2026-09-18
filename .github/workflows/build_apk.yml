@@ -1,4 +1,4 @@
-﻿name: Build MashVPN Android APK
+name: Build MashVPN Android APK
 
 on:
   push:
@@ -18,16 +18,19 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
     - name: Build APK with Gradle
-      run: ./gradlew assembleDebug --stacktrace
+      run: ./gradlew assembleDebug --no-daemon --stacktrace
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
       with:
         name: MashVPN-Android-Debug
         path: app/build/outputs/apk/debug/app-debug.apk
+        if-no-files-found: error
